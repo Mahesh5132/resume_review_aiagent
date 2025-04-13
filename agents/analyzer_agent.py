@@ -1,10 +1,10 @@
-from langchain.llms import LlamaCpp  # Or use OpenAI if you prefer
+from langchain.llms import LlamaCpp  
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import os
 
 # Initialize LLM (replace with your model's path)
-llm = LlamaCpp(model_path= "/workspaces/resume_review_aiagent/models/models/deepseek-llm-7b-chat.Q4_K_M.gguf", n_ctx=2048)  # Replace with actual model path
+llm = LlamaCpp(model_path= "/workspaces/resume_review_aiagent/models/phi-2.Q4_K_M.gguf", n_ctx=2048)  # Replace with actual model path
 
 # Define the feedback prompt template
 feedback_prompt = PromptTemplate(
